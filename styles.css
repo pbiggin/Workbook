@@ -1,0 +1,57 @@
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bookshelf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.book {
+    border: solid 2px black;
+    height: 50vh;
+    width:80px;
+    align-content: center;
+    writing-mode: vertical-rl; 
+    position: relative;
+    background-color: aquamarine;
+}
+
+.book-inside {
+    width: 200px;
+    max-width: 0;
+    overflow: hidden;
+}
+
+.book-edge {
+    border: solid 2px black;
+    width: 10px;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+
+.leftpage {
+ border: solid 2px black;
+ border-top-right-radius: 50px 20px;
+ border-bottom-right-radius: 50px 20px;
+}
+
+.rightpage { 
+ border: solid 2px black;
+ border-top-left-radius: 50px 20px;
+ border-bottom-left-radius: 50px 20px;
+}
+
+.book-container:hover .book-inside {
+    max-width: 300px;
+}
