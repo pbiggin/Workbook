@@ -1,57 +1,90 @@
-
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bookshelf {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
 }
 
 .book-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.book {
-    border: solid 2px black;
-    height: 50vh;
-    width:80px;
-    align-content: center;
-    writing-mode: vertical-rl; 
-    position: relative;
-    background-color: aquamarine;
-}
-
-.book-inside {
-    width: 200px;
-    max-width: 0;
-    overflow: hidden;
-}
-
-.book-edge {
-    border: solid 2px black;
-    width: 10px;
-    overflow: hidden;
-    background-color: aquamarine;
-}
-
-.leftpage {
- border: solid 2px black;
- border-top-right-radius: 50px 20px;
- border-bottom-right-radius: 50px 20px;
-}
-
-.rightpage { 
- border: solid 2px black;
- border-top-left-radius: 50px 20px;
- border-bottom-left-radius: 50px 20px;
+  display: flex;
+  flex-direction: row;
 }
 
 .book-container:hover .book-inside {
-    max-width: 300px;
+  display: block;
+}
+
+.book-container:hover .book {
+  display: none;
+}
+
+.book {
+  border: solid 2px black;
+  height: 50vh;
+  width: 80px;
+  align-content: center;
+  text-align: center;
+  writing-mode: vertical-rl;
+  position: relative;
+}
+
+.book-inside {
+  display: none;
+  width: 20vw;
+  max-width: 0;
+  overflow: hidden;
+}
+
+.leftpage {
+  border: solid 2px black;
+  border-top-right-radius: 50px 20px;
+  border-bottom-right-radius: 50px 20px;
+}
+
+.rightpage {
+  border: solid 2px black;
+  border-top-left-radius: 50px 20px;
+  border-bottom-left-radius: 50px 20px;
+}
+
+.book-container:hover .book-inside {
+  max-width: 300px;
+}
+
+/* book decorations */
+.workbook {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 300%;
+  background-color: aquamarine;
+}
+
+.hunting {
+  font-family: "sixtyfour", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200%;
+  background-color: yellow;
+}
+
+.projects {
+  font-family: "Miniver", serif;
+  font-style: normal;
+  font-size: 300%;
+  background-color: orange;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
