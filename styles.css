@@ -97,3 +97,25 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+/** THIS CODE WAS GRATEFULLY PINCHED FROM Karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html,
+ , then adjusted by phoebe Biggin*/
+
+ .gallery {
+  margin: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.gallery > * {
+  flex: 1 1 198px;
+  max-width: 297px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.gallery > *:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
