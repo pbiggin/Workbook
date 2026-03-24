@@ -16,15 +16,10 @@
   flex-direction: row;
 }
 
-.book-container:hover .book-inside {
-  display: block;
-}
-
-.book-container:hover .book {
-  display: none;
-}
-
 .book {
+  display: block;
+  opacity: 1;
+  visibility: visible;
   border: solid 2px black;
   height: 50vh;
   width: 80px;
@@ -34,11 +29,29 @@
   position: relative;
 }
 
-.book-inside {
+.book.open {
   display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.book-inside {
   width: 20vw;
-  max-width: 0;
   overflow: hidden;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.book-inside.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+a.book-link {
+  display: flex;
+  text-decoration: none;
 }
 
 .leftpage {
@@ -51,10 +64,6 @@
   border: solid 2px black;
   border-top-left-radius: 50px 20px;
   border-bottom-left-radius: 50px 20px;
-}
-
-.book-container:hover .book-inside {
-  max-width: 300px;
 }
 
 /* book decorations */
