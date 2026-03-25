@@ -20,7 +20,7 @@
   display: block;
   opacity: 1;
   visibility: visible;
-  border: solid 2px black;
+  border: solid 5px black;
   height: 50vh;
   width: 80px;
   align-content: center;
@@ -55,15 +55,69 @@ a.book-link {
 }
 
 .leftpage {
-  border: solid 2px black;
+  border: solid 5px black;
   border-top-right-radius: 50px 20px;
   border-bottom-right-radius: 50px 20px;
 }
 
 .rightpage {
-  border: solid 2px black;
+  border: solid 5px black;
   border-top-left-radius: 50px 20px;
   border-bottom-left-radius: 50px 20px;
+}
+
+.workbook-content {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.ball-container {
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 5vw;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.ball-container a {
+  display: flex;
+  flex-direction: row;
+}
+
+.st0 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: square;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+.home-icon {
+  margin: 2vw;
+  height: 5vw;
+  aspect-ratio: 1/0.5;
+  background-image: url("../Images/book-open.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-icon:hover {
+  background-image: url("../Images/book-close.svg");
+}
+
+.crumple-ball {
+  width: 5vw;
+  aspect-ratio: 1/1;
+  background-image: url("../Images/crumple-ball.webp");
+  background-size: cover;
+}
+
+.crumple-ball:hover {
+  background-image: url("../images/crumple-ball-open.jpg");
 }
 
 /* book decorations */
@@ -96,26 +150,4 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-
-/** THIS CODE WAS GRATEFULLY PINCHED FROM Karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html,
- , then adjusted by phoebe Biggin*/
-
- .gallery {
-  margin: 10vw;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-.gallery > * {
-  flex: 1 1 198px;
-  max-width: 297px;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-.gallery > *:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s;
-  cursor: pointer;
 }
