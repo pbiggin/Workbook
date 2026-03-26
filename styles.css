@@ -6,6 +6,7 @@
 
 h1 {
     font-family: "Bitcount Single", system-ui;
+    font-size: auto;
 }
 
 h2,h3,h4 {
@@ -222,7 +223,7 @@ a.book-link {
   flex-direction: column;
   border: solid;
   margin: 2vw;
-  margin-bottom;
+  margin-bottom: 0;
   width: 60%;
   padding: 1vw;
 }
