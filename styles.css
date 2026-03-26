@@ -32,12 +32,11 @@
 
 main {
   margin: 2vw;
-}
+} 
 
-area {
-  cursor: pointer;
-  border: solid;
-  background-color: blueviolet;
+.content {
+  margin-left: 15%;
+  margin-right: 5%;
 }
 
 .book.open {
@@ -153,6 +152,36 @@ a.book-link {
  opacity: 1;
 }
 
+.postcard {
+  border: solid black 1px;
+  width: 70%;
+  aspect-ratio: 2/1.2;
+  margin: 2vw;
+  filter: drop-shadow(10px 5px 10px rgb(182, 181, 181));
+  background-color: white;
+  
+}
+
+.postcard img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.postcard:nth-child(2n) {
+  background-image: url("../Images/postcard-inside.webp");
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 2vw;
+}
+
+.postcard-message:nth-child(2n) {
+  display: block;
+  padding-top: 70%;
+  text-align: center;
+  line-height: 230%;
+}
+
 #popup {
   position: absolute;
   top: 50%;
@@ -215,7 +244,86 @@ a.book-link {
   background-image: url("../images/crumple-ball-open.jpg");
 }
 
+
+/** borrowed code from  https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html **/
+
+
+.gallery {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+}
+.gallery-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  cursor: pointer;
+
+}
+
+/** this code was based off of code above, so also borrowed from https://karenanndonnachie.github.io/VCA_INTERACTIVEMEDIA/CHEATSHEETS/gallery_builder.html **/
+
+.brick-wall {
+  column-count: 3;
+  gap: 0;
+}
+
+.brick-wall > * {
+  width: 100%;
+  break-inside: avoid;
+}
+
+.brick-wall > a {
+  border: solid black 2px;
+  padding: 2vw;
+  cursor: pointer;
+  background-color: rgb(211, 233, 120);
+  outline: revert;
+  text-decoration: none;
+}
+
+.brick-wall > a:hover  {
+  background-color: rgb(186, 228, 20);
+  outline: revert;
+}
+
+/** end borrowed code **/
+
+.gallery-item {
+  border-left: 2px dashed grey;
+  border-top: 2px dashed grey;
+}
+
+.coupon {
+  margin: 0;
+  max-width: min-content;
+  width: 100%;
+  padding: 8%;
+}
+
+.gallery-item:nth-child(-n + 4) {
+  border-top: none;
+}
+
+.gallery-item:nth-child(4n + 1)  {
+  border-left: none;
+}
+
+.gallery-item:nth-child(n + X)  {
+  border-top: none;
+}
+
+/** universal **/
+.center {
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+
+
 /** this code was genrated by Copilot AI, then edited by Phoebe Biggin**/
+/** only used for the crumple ball experiment, which is in experiment quarantine because it doesnt work the way i wanted it to **/
 
 #overlay1, #overlay2, #overlay3, #overlay4 {
   position: fixed;
@@ -279,11 +387,4 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-
-/** universal **/
-.center {
-  justify-self: center;
-  align-self: center;
 }
