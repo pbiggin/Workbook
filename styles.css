@@ -222,7 +222,7 @@ a.book-link {
   flex-direction: column;
   border: solid;
   margin: 2vw;
-  margin-bottom: 0;
+  margin-bottom;
   width: 60%;
   padding: 1vw;
 }
