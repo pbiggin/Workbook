@@ -183,7 +183,7 @@ a.book-link {
 }
 
 .postcard:nth-child(2n) {
-  background-image: url("../Images/postcard-inside.webp");
+  background-image: url("../images/postcard-inside.webp");
   background-size: cover;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -263,7 +263,7 @@ a.book-link {
   height: 5vw;
   width: min-content;
   aspect-ratio: 1/0.5;
-  background-image: url("../Images/book-open.svg");
+  background-image: url("../images/book-open.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -272,7 +272,7 @@ a.book-link {
 }
 
 .home-icon:hover {
-  background-image: url("../Images/book-close.svg");
+  background-image: url("../images/book-close.svg");
 }
 
 
@@ -283,7 +283,7 @@ a.book-link {
 .crumple-ball {
   width: 5vw;
   aspect-ratio: 1/1;
-  background-image: url("../Images/crumple-ball.webp");
+  background-image: url("../images/crumple-ball.webp");
   background-size: cover;
   cursor: pointer;
 }
