@@ -340,8 +340,8 @@ a.book-link {
 /** end borrowed code **/
 
 .gallery-item {
-  border-left: 2px dashed grey;
-  border-top: 2px dashed grey;
+  border-left: 2px dashed black;
+  border-top: 2px dashed black;
 }
 
 .coupon {
