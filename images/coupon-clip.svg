@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 154.3 102">
   <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
-  <path d="M138.7,102H15.6c0-8.6-6.9-15.5-15.5-15.5V15.5c8.6,0,15.5-6.9,15.5-15.5h123.2c0,8.6,6.9,15.5,15.5,15.5v71c-8.6,0-15.5,6.9-15.5,15.5Z"/>
+  <defs>
+    <style>
+      .st0 {
+        fill: #bababa;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M138.7,102H15.6c0-8.6-6.9-15.5-15.5-15.5V15.5c8.6,0,15.5-6.9,15.5-15.5h123.2c0,8.6,6.9,15.5,15.5,15.5v71c-8.6,0-15.5,6.9-15.5,15.5h-.1Z"/>
 </svg>
