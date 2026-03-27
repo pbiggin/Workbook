@@ -82,7 +82,7 @@ a.book-link {
 
 .leftpage {
   border: solid 2px rgb(18, 3, 3);
-  background-image: url("../images/lined-paper.png");
+  background-image: url("../images/crumpled-background.jpg");
   background-size: cover;
   border-top-right-radius: 50px 20px;
   border-bottom-right-radius: 50px 20px;
@@ -90,7 +90,7 @@ a.book-link {
 
 .rightpage {
   border: solid 2px rgb(18, 3, 3);
-  background-image: url("../images/lined-paper-right.png");
+  background-image: url("../images/crumpled-background.jpg");
   background-size: cover;
   border-top-left-radius: 50px 20px;
   border-bottom-left-radius: 50px 20px;
@@ -324,7 +324,6 @@ a.book-link {
   border: solid black 2px;
   padding: 2vw;
   cursor: pointer;
-  background-color: rgb(211, 233, 120);
   outline: revert;
   text-decoration: none;
 }
@@ -407,28 +406,15 @@ a.book-link {
 }
 /* book decorations */
 
-
-.workbook {
-  font-weight: 400;
-  font-style: normal;
-  background-color: aquamarine;
-}
-
-.hunting {
-  font-weight: 400;
-  font-style: normal;
-  background-color: yellow;
-}
-
-.projects {
-  font-style: normal;
-  background-color: orange;
-}
-
 footer {
   position: fixed;
   bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+
+.random-colour {
+  transition: background-color 0.5s;
 }
