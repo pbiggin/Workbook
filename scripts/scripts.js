@@ -18,26 +18,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function openBook(container) {
+  const book = container.querySelector(".book");
+  const insidePages = container.querySelectorAll(".book-inside");
+  if (book) {
+    book.classList.add("open");
+  }
+  insidePages.forEach((page) => {
+    page.classList.add("open");
+  });
+}
 
-   function openBook(container) {
-        const book = container.querySelector(".book");
-        const insidePages = container.querySelectorAll(".book-inside");
-        if (book) {
-          book.classList.add("open");
-        }
-        insidePages.forEach((page) => {
-          page.classList.add("open");
-        });
-      }
+function closeBook(container) {
+  const book = container.querySelector(".book");
+  const insidePages = container.querySelectorAll(".book-inside");
+  if (book) {
+    book.classList.remove("open");
+  }
+  insidePages.forEach((page) => {
+    page.classList.remove("open");
+  });
+}
 
-      function closeBook(container) {
-        const book = container.querySelector(".book");
-        const insidePages = container.querySelectorAll(".book-inside");
-        if (book) {
-          book.classList.remove("open");
-        }
-        insidePages.forEach((page) => {
-          page.classList.remove("open");
-        });
-      }
-      
+document.addEventListener("DOMContentLoaded", function () {
+  const textSize = document.querySelectorAll(".random-font-size");
+
+  const minSize = 15;
+  const maxSize = 60;
+
+  textSize.forEach((el) => {
+    const randomSize =
+      Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize;
+    el.style.fontSize = randomSize + "pt";
+  });
+});
