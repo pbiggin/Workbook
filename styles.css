@@ -190,6 +190,10 @@ a.book-link {
   padding: 2vw;
 }
 
+.postcard-message {
+  margin-right: 10%
+}
+
 .postcard-message:nth-child(2n) {
   display: block;
   padding-top: 70%;
