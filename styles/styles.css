@@ -26,7 +26,6 @@ a:focus, a:active, a:visited {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 10%;
 }
 
 .book-container {
@@ -39,9 +38,9 @@ a:focus, a:active, a:visited {
   opacity: 1;
   visibility: visible;
   border: solid 2px black;
-  height: 50vh;
+  height: 80vh;
   min-height: 400px;
-  width: 80px;
+  width: 7vw;
   align-content: center;
   text-align: center;
   writing-mode: vertical-rl;
@@ -64,7 +63,9 @@ main {
 }
 
 .book-inside {
-  width: 20vw;
+  width: 30vw;
+  aspect-ratio: 1/1.5;
+  max-height: 80vh;
   overflow: hidden;
   display: none;
   opacity: 0;
