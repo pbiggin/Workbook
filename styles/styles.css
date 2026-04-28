@@ -47,9 +47,13 @@ a:focus, a:active, a:visited {
   position: relative;
 }
 
-main {
+.margin {
   margin: 2vw;
 } 
+
+#ignoremain {
+  margin: 0;
+}
 
 .content {
   margin-left: 10%;
@@ -297,6 +301,13 @@ a.book-link {
 
 .home-icon:hover {
   background-image: url("../images/book-close.svg");
+}
+
+#experiment-home {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  z-index: 20;
 }
 
 
