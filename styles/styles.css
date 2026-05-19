@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  cursor: url('/images/cursor-standard.png'), auto;
+}
+
+*:active {
+  cursor: url('/images/cursor-click.png'), auto;
 }
 
 h1 {
@@ -17,6 +23,10 @@ h2,h3,h4 {
 p, a {
    font-family: "VT323", monospace;
    font-size: 14pt;
+}
+
+a {
+  cursor: url('/images/cursor-clickable.png'), auto;
 }
 
 a:focus, a:active, a:visited {
