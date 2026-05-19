@@ -25,9 +25,14 @@ p, a {
    font-size: 14pt;
 }
 
-a {
+a, button {
   cursor: url('/images/cursor-clickable.png'), auto;
 }
+
+.home-icon, .icon, .icon > *, .home-icon > * {
+  cursor: url('/images/cursor-clickable.png'), auto;
+}
+
 
 a:focus, a:active, a:visited {
     border-color: inherit;
