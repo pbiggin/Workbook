@@ -19,6 +19,10 @@ h2,h3,h4 {
   font-family: "Archivo Black", sans-serif;
 }
 
+html {
+   background-color: #F2F0EF;
+}
+
 
 p, a {
    font-family: "VT323", monospace;
